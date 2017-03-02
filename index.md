@@ -26,7 +26,7 @@ category: blog
 
 ## 测试
 
-{% for post in site.md_pages %}
+{% for post in site.pages %}
 -  {{ post.url }} {{ post.title }}
 {{ post.excerpt | remove: 'test' }}
 {% endfor %}
