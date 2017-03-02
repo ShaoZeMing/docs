@@ -36,7 +36,9 @@ layout: default
 
 - assets/image/ps001
 
-![](assets/image/ps001)
+![](https://github.com/ShaoZeMing/docs/tree/gh-pages/assets/image/001.jpg)
+
+
 
 
 ### Definition lists can be used with HTML syntax.
@@ -45,7 +47,16 @@ layout: default
 
 {% for post in site.posts %}
  - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+
+    {% for blog in post.blogs %}
+ - {{ blog.date | date_to_string }} <a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a>
+   {% endfor %}
+
+   {% for mood in post.moods %}
+ - {{ mood.date | date_to_string }} <a href="{{ site.baseurl }}{{ mood.url }}">{{ blog.title }}</a>
+   {% endfor %}
 {% endfor %}
+
 
 
 ## 博客
