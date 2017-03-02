@@ -12,7 +12,7 @@ layout: default
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this.
+### 这是一条水平线
 
 ---
 
@@ -22,26 +22,29 @@ layout: default
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
+![](./assets/image/ps001.jpg)
+
+![](ps001.jpg)
 
 ### Definition lists can be used with HTML syntax.
 
 ## 测试
 
 {% for post in site.posts %}
- - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+ - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
 
 
 ## 博客
 
 {% for post in site.posts.blogs %}
- - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+ - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
 
 ## 心情
 
-{% for post in site.posts.moods %}
- 1. {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% for post in site.posts.moods %
+ 1. {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
 
 
