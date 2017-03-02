@@ -25,6 +25,12 @@ layout: default
 
 ### Definition lists can be used with HTML syntax.
 
+## 测试
+
+{% for post in site.posts %}
+ - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
 
 ## 博客
 
