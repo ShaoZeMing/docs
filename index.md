@@ -24,20 +24,8 @@ layout: default
 
 - /assets/image/ps001.jpg
 
-![](./assets/image/ps001.jpg)
-
-- ps001.jpg
-
-![](ps001.jpg)
-
-- assets/image/ps001.jpg
 
 ![](assets/image/ps001.jpg)
-
-- assets/image/ps001
-
-![](https://github.com/ShaoZeMing/docs/tree/gh-pages/assets/image/001.jpg)
-
 
 
 
@@ -45,6 +33,10 @@ layout: default
 
 ## 测试
 
+{% for post in site.posts %}
+	{{ post.url }} {{ post.title }}
+	{{ post.excerpt | remove: 'test' }}
+{% endfor %}
 
 ## posts
 

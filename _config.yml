@@ -3,3 +3,22 @@ description: 年轻的时候，不要怕，年老的时候，不要悔。
 show_downloads: true
 google_analytics:
 theme: 
+timezone: Asia/Shanghai
+category: articles
+tags: [Blog]
+comments: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_posts/blogs"
+      type: "blogs" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "default" # overrides previous default layout
+      author: "ShaoZeMing"
