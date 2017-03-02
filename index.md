@@ -1,5 +1,7 @@
 ---
 layout: default
+title: 日月言己
+category: blog
 ---
 
 {% for category in site.categories %}
