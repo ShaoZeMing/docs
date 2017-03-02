@@ -45,30 +45,19 @@ layout: default
 
 ## 测试
 
+
+## posts
+
 {% for post in site.posts %}
  - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-
-    {% for blog in post.blogs %}
- - {{ blog.date | date_to_string }} <a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a>
-   {% endfor %}
-
-   {% for mood in post.moods %}
- - {{ mood.date | date_to_string }} <a href="{{ site.baseurl }}{{ mood.url }}">{{ blog.title }}</a>
-   {% endfor %}
 {% endfor %}
 
+## blog
 
-
-## 博客
-
-{% for post in site.posts.blogs %}
- - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+{% for blog in site.blogs %}
+ - {{ blog.date | date_to_string }} <a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a>
 {% endfor %}
 
 ## 心情
-
-{% for post in site.posts.moods %
- 1. {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-{% endfor %}
 
 
