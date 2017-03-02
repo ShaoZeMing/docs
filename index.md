@@ -13,6 +13,14 @@ layout: default
 {% endfor %}
 
 
+#  分类 
+
+{% for category in site.categories %}
+    <li>{{category[0]}}({{category | last | size}})</li>
+        {% for post in category[1] %}
+        <p><a href="{{post.url}}">{{post.title}}</a></p>
+        {% endfor %}
+    {% endfor %}
 
 ###### [](#header-6)Header 6
 
