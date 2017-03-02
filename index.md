@@ -22,9 +22,22 @@ layout: default
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
+- /assets/image/ps001.jpg
+
 ![](./assets/image/ps001.jpg)
 
+- ps001.jpg
+
 ![](ps001.jpg)
+
+- assets/image/ps001.jpg
+
+![](assets/image/ps001.jpg)
+
+- assets/image/ps001
+
+![](assets/image/ps001)
+
 
 ### Definition lists can be used with HTML syntax.
 
