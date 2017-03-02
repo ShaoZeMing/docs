@@ -27,17 +27,20 @@ category: blog
 ## 测试
 
 {% for post in site.pages %}
--  {{ post.url }} {{ post.title }}
+-  [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
 {{ post.excerpt | remove: 'test' }}
 {% endfor %}
 
-## moods
 
-{% for mood in site.pages %}
-### [{{ mood.title }}]({{ mood.url }})   
-  *{{ mood.excerpt | remove: 'test' }}*
+# index
+
+{{ site.baseurl }}
+
+
+{% for post in site.posts %}
+- {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+  {{ post.excerpt}}
 {% endfor %}
-
 
 
 
