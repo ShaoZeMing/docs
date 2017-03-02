@@ -33,18 +33,16 @@ layout: default
 
 ## 测试
 
-{% for post in site.posts %}
----
-    {{ post.url }} {{ post.title }}
-	{{ post.excerpt | remove: 'test' }}
+{% for post in site.md_pages %}
+-  {{ post.url }} {{ post.title }}
+{{ post.excerpt | remove: 'test' }}
 {% endfor %}
 
-## MING
+## moods
 
-{% for blog in site.blogs %}
----
-    {{ blog.url }} {{ blog.title }}
-	{{ blog.excerpt | remove: 'test' }}
+{% for mood in site.html_pages %}
+-   {{ mood.url }} {{ mood.title }}
+{{ mood.excerpt | remove: 'test' }}
 {% endfor %}
 
 
@@ -56,7 +54,7 @@ layout: default
 
 ## blog
 
-{% for blog in site.blogs %}
+{% for blog in site.site.blogs_data%}
  - {{ blog.date | date_to_string }} <a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a>
 {% endfor %}
 
