@@ -4,15 +4,6 @@ title: 日月言己
 category: blog
 ---
 
-#  分类 
-
-{% for category in site.categories %}
-    <li>{{category[0]}}({{category | last | size}})</li>
-        {% for post in category[1] %}
-        <p><a href="{{post.url}}">{{post.title}}</a></p>
-        {% endfor %}
-    {% endfor %}
-
 ###### [](#header-6)Header 6
 
 | head1        | head two          | three |
@@ -42,17 +33,12 @@ category: blog
 
 ## moods
 
-{% for mood in site.html_pages %}
-- ### [{{ mood.title }}]({{ mood.url }})   
- 
- *{{ mood.excerpt | remove: 'test' }}*
+{% for mood in site.pages %}
+### [{{ mood.title }}]({{ mood.url }})   
+  *{{ mood.excerpt | remove: 'test' }}*
 {% endfor %}
 
----
 
-{% for post in html_pages %}
- - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-{% endfor %}
 
 
 
