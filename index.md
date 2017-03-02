@@ -47,6 +47,6 @@ category: blog
 
 
 
-![](img/mao.gif)
+![](img/other/mao.gif)
 
 
