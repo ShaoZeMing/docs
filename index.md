@@ -28,7 +28,7 @@ category: blog
 
 {% for post in site.pages %}
 -  [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-{{ post.excerpt | remove: 'test' }}
+  >{{ post.excerpt | remove: 'test' }}
 {% endfor %}
 
 
@@ -39,10 +39,14 @@ category: blog
 
 {% for post in site.posts %}
 - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+```  
   {{ post.excerpt}}
+```
+---
 {% endfor %}
 
 
 
+![](img/mao.gif)
 
 
