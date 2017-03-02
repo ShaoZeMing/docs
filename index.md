@@ -34,9 +34,19 @@ layout: default
 ## 测试
 
 {% for post in site.posts %}
-	{{ post.url }} {{ post.title }}
+---
+    {{ post.url }} {{ post.title }}
 	{{ post.excerpt | remove: 'test' }}
 {% endfor %}
+
+## MING
+
+{% for blog in site.blogs %}
+---
+    {{ blog.url }} {{ blog.title }}
+	{{ blog.excerpt | remove: 'test' }}
+{% endfor %}
+
 
 ## posts
 
