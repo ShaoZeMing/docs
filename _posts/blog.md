@@ -1,0 +1,11 @@
+---
+layout: default
+title: 博客|日月言己
+category: blogs
+---
+
+## 博客列表
+
+{% for post in html_pages %}
+ - {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
