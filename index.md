@@ -7,7 +7,7 @@ category: index
 # 博客列表
 
 {% for post in site.posts %}
-{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> 
+ [{{ post.title }}]({{ site.baseurl }}{{ post.url }})——{{ post.date | date_to_string }}
   {{ post.excerpt}}
 
 ---
