@@ -83,7 +83,6 @@ sudo rm -rf /etc/postgresql/
   apt-get install postgresql-9.4-postgis-2.1
   ```
 3. 用数据库管理员身份连接postgresql与postgis(赋予postgresql空间数据库的能力)
-
   ```
   系统管理员=# `CREATE EXTENSION postgis;`
   CREATE EXTENSION
