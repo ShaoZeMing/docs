@@ -3,6 +3,9 @@ layout: default
 title: 日月言己
 category: index
 ---
+# 先来只宠物
+
+![](img/other/mao.gif)
 
 # 博客列表
 
@@ -15,7 +18,5 @@ category: index
 {% endfor %}
 
 
-
-![](img/other/mao.gif)
 
 
