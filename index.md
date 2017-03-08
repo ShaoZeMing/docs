@@ -10,7 +10,7 @@ category: index
 # 博客列表
 
 {% for post in site.posts %}
- ### [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
+<h3>[{{ post.title }}]({{ site.baseurl }}{{ post.url }})<h3>
   {{ post.excerpt}}
 
 ---
