@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ubuntu环境下SSH的安装和使用
+title: ContOS环境下SSH的安装和使用
 category: blogs
 ---
 
@@ -19,23 +19,23 @@ SSH分为客户端和服务端。
 ## 安装客户端（客户端不是必须的）
 
 ```
-# apt-get install ssh
+# yum install ssh
 ```
 如果安装失败，则使用下面命令进行安装
 ```
-# apt-get install openssh-client
+# yum install openssh-client
 ```
 ## SSH登录（客户端）
 ```
-$ ssh 192.168.159.128
-$ ssh -l weiyg 192.168.159.128
-$ ssh weiyg@192.168.159.128
+$ ssh 192.168.159.128    //你的ip地址
+$ ssh -l weiyg 192.168.159.128  //你的ip地址
+$ ssh weiyg@192.168.159.128      //你的用户@服务端ip
 ```
 # 服务端
 ## 安装服务器
 
 ```
-# apt-get install openssh-server
+# yum install openssh-server
 ```
 ## 启动服务器
 
@@ -59,5 +59,6 @@ Port 20
 ssh默认配置是允许root登录的，可以修改配置表禁止其登录
 
 ```
-PermitRootLogin no
+PermitRootLogin no     //不准root登陆
+PermitRootLogin yes    //允许root登陆
 ```

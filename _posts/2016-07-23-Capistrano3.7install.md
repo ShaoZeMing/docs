@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Capistrano 3自动化部署Web项目
+title: Capistrano 3 install
 category: blogs
 ---
 
