@@ -14,7 +14,7 @@ category: index
 
   {{ post.excerpt}}
 
----
+  ---
 
 {% endfor %}
 
