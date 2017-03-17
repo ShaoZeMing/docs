@@ -23,15 +23,12 @@ Lumen轻量级的框架，用来做API很合适，起码本人这么想。
 # Tymon/JWT-Auth安装
 
 - 下载包
-
 `composer require tymon/jwt-auth`
 
 - 在"bootstrap/app.PHP" 文件中，找到Register Service Providers一节，添加：
-
 `$app->register('Tymon\JWTAuth\Providers\JWTAuthServiceProvider');`
 
 - 在“app”目录下创建“helpers.php”文件。
-
 ```
 <?php
 
@@ -68,6 +65,8 @@ if ( ! function_exists('config_path'))
 - 运行  `composer require basicit/lumen-vendor-publish `
 
 - 在 app/Console/Kernel.php 文件内 添加(**此处是lumen5.4,如果提示没有这个类，可以在vendor下查看对应的命名空间路径**):
+
+
 ```
 protected $commands = [
      'Laravelista\LumenVendorPublish\VendorPublishCommand'   //新版"basicit/lumen-vendor-publish": "^2.0"
