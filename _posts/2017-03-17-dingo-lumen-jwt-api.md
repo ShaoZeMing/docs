@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Git SSH gitHub 秘钥连接配置
+title: Lumen+Dingo/Api+JWT安装配置
 category: blogs
 ---
 

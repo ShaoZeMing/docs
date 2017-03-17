@@ -4,6 +4,9 @@ title: PostGIS安装和创建模板template_postgis
 category: blogs
 ---
 PostGIS添加了对PostgreSQL数据库中地理对象的支持。本文档描述了安装PostGIS和创建模板PostGIS数据库的过程。假设PostgreSQL已经安装。如果没有，请参考PostgreSQL页面。
+
+
+
 # 内容 [ 隐藏 ]
 1. 安装PostGIS
 2. 安装PostGIS扩展
